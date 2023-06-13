@@ -33,9 +33,13 @@ ejercicios indicados.
   principal (`sox`, `$X2X`, `$FRAME`, `$WINDOW` y `$LPC`). Explique el significado de cada una de las 
   opciones empleadas y de sus valores.
 > `sox`: El comando sox sirve para realizar múltiples tareas sobre un fichero de audio, como cambiar su formato, y realizar operaciones de procesado de señal (transformada o reducción de ruido por ejemplo).
+> 
 > `$X2X`: Programa de SPTK que permite la conversión entre distintos formatos de datos.
+> 
 > `$FRAME`: Sirve para dividir la señal en tramas y extraer frame a frame toda una secuencia. Concretando para nuestro caso, hemos elegido tramas de longitud 240 (-l 240) y con un periodo de 80 (-p 80).
+> 
 > `$WINDOW`: Enventana los datos; Multiplica las tramas por la ventana de Blackman.
+> 
 > `$LPC`: Mediante el método Levinson-Durbin se calculan los distintos coeficientes LPC.
 
 - Explique el procedimiento seguido para obtener un fichero de formato *fmatrix* a partir de los ficheros de
