@@ -73,16 +73,16 @@ ejercicios indicados.
    
     `FEAT=lp /home/rogerurbieta/PAV/bin/run_spkid lp`
     
-    FEAT=lpcc /home/rogerurbieta/PAV/bin/run_spkid lpcc`
+    `FEAT=lpcc /home/rogerurbieta/PAV/bin/run_spkid lpcc`
     
-    FEAT=mfcc /home/rogerurbieta/PAV/bin/run_spkid mfcc`
+    `FEAT=mfcc /home/rogerurbieta/PAV/bin/run_spkid mfcc`
     
     > Posteriormente guardamos en un archivo .txt los coeficientes correspondientes a rho[2] y rho[3] para después hacer las gràficas. En nuestro caso lo hacemos con el interlocutor SES013.
-    `fmatrix_show work/lp/BLOCK11/SES119/*.lp | egrep '^\[' | cut -f4,5 > graphics/lp.txt
+    `fmatrix_show work/lp/BLOCK11/SES119/*.lp | egrep '^\[' | cut -f4,5 > graphics/lp.txt`
     
-    fmatrix_show work/lpcc/BLOCK01/SES119/*.lpcc | egrep '^\[' | cut -f4,5 > graphics/lpcc.txt
+    `fmatrix_show work/lpcc/BLOCK01/SES119/*.lpcc | egrep '^\[' | cut -f4,5 > graphics/lpcc.txt`
     
-    fmatrix_show work/mfcc/BLOCK01/SES119/*.mfcc | egrep '^\[' | cut -f4,5 > graphics/mfcc.txt`
+    `fmatrix_show work/mfcc/BLOCK01/SES119/*.mfcc | egrep '^\[' | cut -f4,5 > graphics/mfcc.txt`
     
     > Por último, mediante Matlab representamos las gráficas de cada tipo distinto de predicción:
     `foto`
