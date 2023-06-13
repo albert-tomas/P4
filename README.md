@@ -70,21 +70,19 @@ ejercicios indicados.
   + Indique **todas** las órdenes necesarias para obtener las gráficas a partir de las señales 
     parametrizadas.
     > Inicialmente, hemos ejecutado el script run_spkid para cada una de las predicciones. Éste calcula para cada frase de cada interlocutor todas sus predicciones y las almacena:
-   
+    >    
     > `FEAT=lp /home/rogerurbieta/PAV/bin/run_spkid lp`
-    
     > `FEAT=lpcc /home/rogerurbieta/PAV/bin/run_spkid lpcc`
-    
     > `FEAT=mfcc /home/rogerurbieta/PAV/bin/run_spkid mfcc`
-    
+    >
     > Posteriormente guardamos en un archivo .txt los coeficientes correspondientes a rho[2] y rho[3] para después hacer las gràficas. En nuestro caso lo hacemos con el interlocutor SES013.
+    > 
     > `fmatrix_show work/lp/BLOCK11/SES119/*.lp | egrep '^\[' | cut -f4,5 > graphics/lp.txt`
-    
     > `fmatrix_show work/lpcc/BLOCK01/SES119/*.lpcc | egrep '^\[' | cut -f4,5 > graphics/lpcc.txt`
-    
     > `fmatrix_show work/mfcc/BLOCK01/SES119/*.mfcc | egrep '^\[' | cut -f4,5 > graphics/mfcc.txt`
-    
+    >
     > Por último, mediante Matlab representamos las gráficas de cada tipo distinto de predicción:
+    > 
     > ![image](https://github.com/albert-tomas/P4/assets/125367047/d5cfbb76-021f-4f40-ae21-b01d1c892fa3)
 
   + ¿Cuál de ellas le parece que contiene más información?
@@ -115,10 +113,13 @@ Complete el código necesario para entrenar modelos GMM.
   de la página 20 del enunciado puede servirle de referencia del resultado deseado). Analice la capacidad
   del modelado GMM para diferenciar las señales de uno y otro.
 > Comparando los locutores SES119 y SES119:
+> 
 > ![image](https://github.com/albert-tomas/P4/assets/125367047/1ddf2ba3-2a9d-4534-a1c8-521db5d2cf1a)
 > Comparando los locutores SES119 y SES118:
+> 
 > ![image](https://github.com/albert-tomas/P4/assets/125367047/a339d306-3f72-49ae-a728-ece1e1190ae3)
 > Comparando los locutores SES119 y SES117:
+> 
 > ![image](https://github.com/albert-tomas/P4/assets/125367047/a2e2b30c-10b2-4fe8-9e3b-6d300e781bfd)
 > 
 > Obviamente, el mejor resultado lo obtenemos en la primera gráfica, donde el locutor y las muestras coinciden.
