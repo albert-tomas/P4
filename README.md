@@ -70,13 +70,20 @@ ejercicios indicados.
   + Indique **todas** las órdenes necesarias para obtener las gráficas a partir de las señales 
     parametrizadas.
     > Inicialmente, hemos ejecutado el script run_spkid para cada una de las predicciones. Éste calcula para cada frase de cada interlocutor todas sus predicciones y las almacena:
+   
     `FEAT=lp /home/rogerurbieta/PAV/bin/run_spkid lp
+    
     FEAT=lpcc /home/rogerurbieta/PAV/bin/run_spkid lpcc
+    
     FEAT=mfcc /home/rogerurbieta/PAV/bin/run_spkid mfcc`
+    
     > Posteriormente guardamos en un archivo .txt los coeficientes correspondientes a rho[2] y rho[3] para después hacer las gràficas. En nuestro caso lo hacemos con el interlocutor SES013.
     `fmatrix_show work/lp/BLOCK11/SES119/*.lp | egrep '^\[' | cut -f4,5 > graphics/lp.txt
+    
     fmatrix_show work/lpcc/BLOCK01/SES119/*.lpcc | egrep '^\[' | cut -f4,5 > graphics/lpcc.txt
+    
     fmatrix_show work/mfcc/BLOCK01/SES119/*.mfcc | egrep '^\[' | cut -f4,5 > graphics/mfcc.txt`
+    
     > Por último, mediante Matlab representamos las gráficas de cada tipo distinto de predicción:
     `foto`
 
