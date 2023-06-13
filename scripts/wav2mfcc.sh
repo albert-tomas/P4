@@ -5,7 +5,7 @@ set -o pipefail
 
 ## \file
 ## \TODO This file implements a very trivial feature extraction; use it as a template for other front ends.
-## 
+## ## \TODO
 ## Please, read SPTK documentation and some papers in order to implement more advanced front ends.
 
 # Base name for temporary files
@@ -17,13 +17,13 @@ cleanup() {
    \rm -f $base.*
 }
 
-if [[ $# != 3 ]]; then
-   echo "$0 mfcc_order mfcc_filter input.wav output.lp"
+if [[ $# != 4 ]]; then
+   echo "$0 mfcc_order melfilter_bank_order input.wav output.lp"
    exit 1
 fi
 
 mfcc_order=$1
-mfcc_filter=$2
+melfilter_bank_order=$2
 inputfile=$3
 outputfile=$4
 
@@ -44,13 +44,13 @@ fi
 
 # Main command for feature extration
 sox $inputfile -t raw -e signed -b 16 - | $X2X +sf | $FRAME -l 240 -p 80 | $WINDOW -l 240 -L 240 |
-	$MFCC -l 240 -s 8 -w 1 -m $mfcc_order -f $mfcc_filter > $base.mfcc || exit 1
+	$MFCC -l 240 -s 8 -m $mfcc_order -n $melfilter_bank_order > $base.lp || exit 1
    
 
 # Our array files need a header with the number of cols and rows:
-ncol=$((mfcc_order+1)) # mfcc p =>  (cc1 cc2 ... ccp) 
-nrow=`$X2X +fa < $base.mfcc | wc -l | perl -ne 'print $_/'$ncol', "\n";'`
+ncol=$((mfcc_order)) # mfcc p =>  (gain a1 a2 ... ap) 
+nrow=`$X2X +fa < $base.lp | wc -l | perl -ne 'print $_/'$ncol', "\n";'`
 
 # Build fmatrix file by placing nrow and ncol in front, and the data after them
 echo $nrow $ncol | $X2X +aI > $outputfile
-cat $base.mfcc >> $outputfile
+cat $base.lp >> $outputfile
