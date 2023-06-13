@@ -63,7 +63,7 @@ ejercicios indicados.
 
 - Inserte una imagen mostrando la dependencia entre los coeficientes 2 y 3 de las tres parametrizaciones
   para todas las señales de un locutor.
-  ![imagen](https://github.com/albert-tomas/P4/assets/125303876/adb2e256-8952-4277-858f-c9a7bd96d7e5)
+  > ![imagen](https://github.com/albert-tomas/P4/assets/125303876/adb2e256-8952-4277-858f-c9a7bd96d7e5)
   > ![imagen](https://github.com/albert-tomas/P4/assets/125303876/1ab749bc-738e-4ef1-971d-981efcb61bd9)
   > ![imagen](https://github.com/albert-tomas/P4/assets/125303876/f439c4d1-5639-4ac8-9293-faf55d8e7b97)
 
@@ -95,7 +95,7 @@ ejercicios indicados.
 
   |                        | LP   | LPCC | MFCC |
   |------------------------|:----:|:----:|:----:|
-  | &rho;<sub>x</sub>[2,3] |  -0,506348    |  0,30836    |   0,244409   |
+  | &rho;<sub>x</sub>[2,3] |-0,506348|0,30836|0,244409|
   
   + Compare los resultados de <code>pearson</code> con los obtenidos gráficamente.
   > Analizando los resultados en valor absoluto, el valor de rho en LP es el mayor de los tres, indicando una correlación más alta. También vemos que LPCC y MFCC están similarmente incorrelados, lo cual ya se apreciaba en la gráfica.
