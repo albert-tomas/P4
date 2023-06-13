@@ -63,7 +63,7 @@ ejercicios indicados.
 
 - Inserte una imagen mostrando la dependencia entre los coeficientes 2 y 3 de las tres parametrizaciones
   para todas las señales de un locutor.
-  > ![imagen](https://github.com/albert-tomas/P4/assets/125303876/adb2e256-8952-4277-858f-c9a7bd96d7e5)
+  ![imagen](https://github.com/albert-tomas/P4/assets/125303876/adb2e256-8952-4277-858f-c9a7bd96d7e5)
   > ![imagen](https://github.com/albert-tomas/P4/assets/125303876/1ab749bc-738e-4ef1-971d-981efcb61bd9)
   > ![imagen](https://github.com/albert-tomas/P4/assets/125303876/f439c4d1-5639-4ac8-9293-faf55d8e7b97)
 
@@ -71,21 +71,21 @@ ejercicios indicados.
     parametrizadas.
     > Inicialmente, hemos ejecutado el script run_spkid para cada una de las predicciones. Éste calcula para cada frase de cada interlocutor todas sus predicciones y las almacena:
    
-    `FEAT=lp /home/rogerurbieta/PAV/bin/run_spkid lp`
+    > `FEAT=lp /home/rogerurbieta/PAV/bin/run_spkid lp`
     
-    `FEAT=lpcc /home/rogerurbieta/PAV/bin/run_spkid lpcc`
+    > `FEAT=lpcc /home/rogerurbieta/PAV/bin/run_spkid lpcc`
     
-    `FEAT=mfcc /home/rogerurbieta/PAV/bin/run_spkid mfcc`
+    > `FEAT=mfcc /home/rogerurbieta/PAV/bin/run_spkid mfcc`
     
     > Posteriormente guardamos en un archivo .txt los coeficientes correspondientes a rho[2] y rho[3] para después hacer las gràficas. En nuestro caso lo hacemos con el interlocutor SES013.
-    `fmatrix_show work/lp/BLOCK11/SES119/*.lp | egrep '^\[' | cut -f4,5 > graphics/lp.txt`
+    > `fmatrix_show work/lp/BLOCK11/SES119/*.lp | egrep '^\[' | cut -f4,5 > graphics/lp.txt`
     
-    `fmatrix_show work/lpcc/BLOCK01/SES119/*.lpcc | egrep '^\[' | cut -f4,5 > graphics/lpcc.txt`
+    > `fmatrix_show work/lpcc/BLOCK01/SES119/*.lpcc | egrep '^\[' | cut -f4,5 > graphics/lpcc.txt`
     
-    `fmatrix_show work/mfcc/BLOCK01/SES119/*.mfcc | egrep '^\[' | cut -f4,5 > graphics/mfcc.txt`
+    > `fmatrix_show work/mfcc/BLOCK01/SES119/*.mfcc | egrep '^\[' | cut -f4,5 > graphics/mfcc.txt`
     
     > Por último, mediante Matlab representamos las gráficas de cada tipo distinto de predicción:
-    ![imagen](https://github.com/albert-tomas/P4/assets/125303876/dfc9a460-b029-4db7-b222-1aa60c9d53d8)
+    > ![image](https://github.com/albert-tomas/P4/assets/125367047/d5cfbb76-021f-4f40-ae21-b01d1c892fa3)
 
   + ¿Cuál de ellas le parece que contiene más información?
     > Las gráficas más incorreladas, es decir, aquellas con puntos más separados, son las que aportan mayor información. Por lo tanto, lpcc y mfcc comprobamos que aportan más información que lp.
