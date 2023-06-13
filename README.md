@@ -71,9 +71,9 @@ ejercicios indicados.
     parametrizadas.
     > Inicialmente, hemos ejecutado el script run_spkid para cada una de las predicciones. Éste calcula para cada frase de cada interlocutor todas sus predicciones y las almacena:
    
-    `FEAT=lp /home/rogerurbieta/PAV/bin/run_spkid lp
+    `FEAT=lp /home/rogerurbieta/PAV/bin/run_spkid lp`
     
-    FEAT=lpcc /home/rogerurbieta/PAV/bin/run_spkid lpcc
+    FEAT=lpcc /home/rogerurbieta/PAV/bin/run_spkid lpcc`
     
     FEAT=mfcc /home/rogerurbieta/PAV/bin/run_spkid mfcc`
     
