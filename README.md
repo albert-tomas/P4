@@ -93,9 +93,9 @@ ejercicios indicados.
 - Usando el programa <code>pearson</code>, obtenga los coeficientes de correlación normalizada entre los
   parámetros 2 y 3 para un locutor, y rellene la tabla siguiente con los valores obtenidos.
 
-  |                        | LP   | LPCC | MFCC |
-  |------------------------|:----:|:----:|:----:|
-  | &rho;<sub>x</sub>[2,3] |-0,506348|0,30836|0,244409|
+  > |                        | LP   | LPCC | MFCC |
+  > |------------------------|:----:|:----:|:----:|
+  > | &rho;<sub>x</sub>[2,3] |-0,506348|0,30836|0,244409|
   
   + Compare los resultados de <code>pearson</code> con los obtenidos gráficamente.
   > Analizando los resultados en valor absoluto, el valor de rho en LP es el mayor de los tres, indicando una correlación más alta. También vemos que LPCC y MFCC están similarmente incorrelados, lo cual ya se apreciaba en la gráfica.
@@ -109,19 +109,17 @@ Complete el código necesario para entrenar modelos GMM.
 
 - Inserte una gráfica que muestre la función de densidad de probabilidad modelada por el GMM de un locutor
   para sus dos primeros coeficientes de MFCC.
-> !(https://cdn.discordapp.com/attachments/1081506947892777012/1117513443289878589/image.png)
+> ![image](https://github.com/albert-tomas/P4/assets/125367047/6989d05a-41ba-471a-980b-a2f5fcdf8cbf)
 
 - Inserte una gráfica que permita comparar los modelos y poblaciones de dos locutores distintos (la gŕafica
   de la página 20 del enunciado puede servirle de referencia del resultado deseado). Analice la capacidad
   del modelado GMM para diferenciar las señales de uno y otro.
 > Comparando los locutores SES119 y SES119:
-> !(https://cdn.discordapp.com/attachments/1081506947892777012/1117514855579127818/image.png)
+> ![image](https://github.com/albert-tomas/P4/assets/125367047/1ddf2ba3-2a9d-4534-a1c8-521db5d2cf1a)
 > Comparando los locutores SES119 y SES118:
-> !(https://cdn.discordapp.com/attachments/1081506947892777012/1117514919877820566/image.png)
+> ![image](https://github.com/albert-tomas/P4/assets/125367047/a339d306-3f72-49ae-a728-ece1e1190ae3)
 > Comparando los locutores SES119 y SES117:
-> !(https://cdn.discordapp.com/attachments/1081506947892777012/1117515022764085298/image.png)
-> Comparando los locutores SES119 y SES120:
-> !(https://cdn.discordapp.com/attachments/1081506947892777012/1117515180025315378/image.png)
+> ![image](https://github.com/albert-tomas/P4/assets/125367047/a2e2b30c-10b2-4fe8-9e3b-6d300e781bfd)
 > 
 > Obviamente, el mejor resultado lo obtenemos en la primera gráfica, donde el locutor y las muestras coinciden.
 
@@ -133,7 +131,7 @@ Complete el código necesario para realizar reconociminto del locutor y optimice
   SPEECON usando su mejor sistema de reconocimiento para los parámetros LP, LPCC y MFCC.
 >   |                        | LP   | LPCC | MFCC |
 >   |------------------------|:----:|:----:|:----:|
->   | Tasa error |   8,79%   |  0,51%  |   1,53%   |
+>   | Tasa error |8,79%|0,51%|1,53%|
 
 ### Verificación del locutor.
 
@@ -145,13 +143,10 @@ Complete el código necesario para realizar verificación del locutor y optimice
   de reconocimiento.
 >   |                        | LP   | LPCC | MFCC |
 >   |------------------------|:----:|:----:|:----:|
->   | Threshold |   4,894922244328  |  1,2008614748077  |   1,637487330275   |
->   |------------------------|:----:|:----:|:----:|
->   | Missed |   40,8%   |  6,4%  |   8,4%   |
->   |------------------------|:----:|:----:|:----:|
->   | False Alarm |   2,4%   |  1,3%  |   1,4%   |
->   |------------------------|:----:|:----:|:----:|
->   | Cost Detection |   62,4   |  18,1  |   21   |
+>   | Threshold |5,1605383329438|1,2288918068578|1,5817057391034|
+>   | Missed |49,6%|6,8%|8%|
+>   | False Alarm |1,2%|1,3%|1,5%|
+>   | Cost Detection |60,4|18,5|21,5|
  
 ### Test final
 
