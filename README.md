@@ -63,9 +63,9 @@ ejercicios indicados.
 
 - Inserte una imagen mostrando la dependencia entre los coeficientes 2 y 3 de las tres parametrizaciones
   para todas las señales de un locutor.
-  > ![imagen](https://github.com/albert-tomas/P4/assets/125303876/a9ca1971-ba41-4c79-875c-8c24b425ea28)
-  > !(https://cdn.discordapp.com/attachments/1081506947892777012/1117500271086551130/image.png)
-  > !(https://cdn.discordapp.com/attachments/1081506947892777012/1117500320101183548/image.png)
+  > ![imagen](https://github.com/albert-tomas/P4/assets/125303876/adb2e256-8952-4277-858f-c9a7bd96d7e5)
+  > ![imagen](https://github.com/albert-tomas/P4/assets/125303876/1ab749bc-738e-4ef1-971d-981efcb61bd9)
+  > ![imagen](https://github.com/albert-tomas/P4/assets/125303876/f439c4d1-5639-4ac8-9293-faf55d8e7b97)
 
   + Indique **todas** las órdenes necesarias para obtener las gráficas a partir de las señales 
     parametrizadas.
@@ -85,7 +85,7 @@ ejercicios indicados.
     `fmatrix_show work/mfcc/BLOCK01/SES119/*.mfcc | egrep '^\[' | cut -f4,5 > graphics/mfcc.txt`
     
     > Por último, mediante Matlab representamos las gráficas de cada tipo distinto de predicción:
-    `foto`
+    ![imagen](https://github.com/albert-tomas/P4/assets/125303876/dfc9a460-b029-4db7-b222-1aa60c9d53d8)
 
   + ¿Cuál de ellas le parece que contiene más información?
     > Las gráficas más incorreladas, es decir, aquellas con puntos más separados, son las que aportan mayor información. Por lo tanto, lpcc y mfcc comprobamos que aportan más información que lp.
