@@ -63,7 +63,7 @@ ejercicios indicados.
 
 - Inserte una imagen mostrando la dependencia entre los coeficientes 2 y 3 de las tres parametrizaciones
   para todas las señales de un locutor.
-  > !(https://cdn.discordapp.com/attachments/1081506947892777012/1117499763793862676/image.png)
+  > ![imagen](https://github.com/albert-tomas/P4/assets/125303876/a9ca1971-ba41-4c79-875c-8c24b425ea28)
   > !(https://cdn.discordapp.com/attachments/1081506947892777012/1117500271086551130/image.png)
   > !(https://cdn.discordapp.com/attachments/1081506947892777012/1117500320101183548/image.png)
 
