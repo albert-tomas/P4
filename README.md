@@ -144,7 +144,7 @@ Complete el código necesario para realizar reconociminto del locutor y optimice
   SPEECON usando su mejor sistema de reconocimiento para los parámetros LP, LPCC y MFCC.
 >   |                        | LP   | LPCC | MFCC |
 >   |------------------------|:----:|:----:|:----:|
->   | Tasa error |8,79%|0,51%|1,53%|
+>   | Tasa error |8,15%|0,38%|0,76%|
 
 ### Verificación del locutor.
 
@@ -156,10 +156,10 @@ Complete el código necesario para realizar verificación del locutor y optimice
   de reconocimiento.
 >   |                        | LP   | LPCC | MFCC |
 >   |------------------------|:----:|:----:|:----:|
->   | Threshold |5,1605383329438|1,2288918068578|1,5817057391034|
->   | Missed |49,6%|6,8%|8%|
->   | False Alarm |1,2%|1,3%|1,5%|
->   | Cost Detection |60,4|18,5|21,5|
+>   | Threshold |0,120904931167495|-0.212416024181011|0,333751726235182|
+>   | Missed |92/250=0.3680%|18/250=7,2%|33/250=13,20%|
+>   | False Alarm |15/1000=0.0150%|3/1000=0.3%|3/1000=0.3%|
+>   | Cost Detection |50,3|9,9|15,9|
  
 ### Test final
 

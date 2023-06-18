@@ -233,7 +233,7 @@ for cmd in $*; do
        EXEC="gmm_verify -d $w/$FEAT -e $FEAT -D $w/gmm/$FEAT -E gmm -w $world $lists/gmm.list $lists/final/verif.test $lists/final/verif.test.candidates"
        echo $EXEC && $EXEC | tee $TEMP_VERIF || exit 1
         perl -ane 'print "$F[0]\t$F[1]\t";
-            if ($F[2] > 4.7583267672418) {print "1\n"}
+            if ($F[2] > -0.212416024181011) {print "1\n"}
             else {print "0\n"}' $TEMP_VERIF | tee $FINAL_VERIF
    # If the command is not recognize, check if it is the name
    # of a feature and a compute_$FEAT function exists.
